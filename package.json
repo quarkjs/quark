@@ -1,5 +1,5 @@
 {
-  "name": "quark",
+  "name": "@quark-js/quark",
   "version": "0.0.1",
   "description": "Uma biblioteca para facilitar a criação de Web Components nativos",
   "main": "src/index.ts",
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/quarkjs/quark.git"
   },
   "keywords": [
-    "Web Components"
+    "Web Components", "TypeScript"
   ],
   "author": "",
   "license": "MIT",
