@@ -1,6 +1,6 @@
 {
   "name": "@quark-js/quark",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Uma biblioteca para facilitar a criação de Web Components nativos",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
