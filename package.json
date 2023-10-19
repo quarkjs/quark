@@ -1,15 +1,30 @@
 {
   "name": "quark",
   "version": "0.0.1",
-  "packageManager": "yarn@3.6.4",
-  "license": "MIT",
+  "description": "Uma biblioteca para facilitar a criação de Web Components nativos",
+  "main": "src/index.ts",
   "scripts": {
-    "build": "tsup src/index.ts"
+    "build": "tsup src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quarkjs/quark.git"
+  },
+  "keywords": [
+    "Web Components"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/quarkjs/quark/issues"
+  },
+  "homepage": "https://github.com/quarkjs/quark#readme",
   "dependencies": {
     "typescript": "^5.2.2"
   },
   "devDependencies": {
     "tsup": "^7.2.0"
-  }
+  },
+  "packageManager": "yarn@3.6.4"
 }
