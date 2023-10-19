@@ -1,2 +1,2 @@
-export { default as connected } from './connected'
+export * from './lifecycle'
 export { default as define } from './define'
