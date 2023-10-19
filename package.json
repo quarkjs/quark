@@ -1,6 +1,6 @@
 {
   "name": "@quark-js/quark",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Uma biblioteca para facilitar a criação de Web Components nativos",
   "main": "src/index.ts",
   "scripts": {
