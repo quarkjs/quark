@@ -1,9 +1,4 @@
-type Options = {
-  extends?: string;
-  shadow?: 'open' | 'close';
-}
-
-const define = (name: string, options?: Options) =>
+const define = (name: string, options?: ElementDefinitionOptions) =>
   (constructor: CustomElementConstructor) =>
     customElements.define(name, constructor, options)
 
