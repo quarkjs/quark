@@ -258,6 +258,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@quark-js/quark@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@quark-js/quark@workspace:."
+  dependencies:
+    tsup: ^7.2.0
+    typescript: ^5.2.2
+  languageName: unknown
+  linkType: soft
+
 "@tootallnate/once@npm:2":
   version: 2.0.0
   resolution: "@tootallnate/once@npm:2.0.0"
@@ -1501,15 +1510,6 @@ __metadata:
   checksum: 39f760e09a2a3bbfe8f5287cf733ecdad69d6af2fe6f97ca95f24b8921858b91e9ea3c9eeec6e08cede96181b3bb33f95c6ffd8c77e63986508aa2e8159fa200
   languageName: node
   linkType: hard
-
-"quark@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "quark@workspace:."
-  dependencies:
-    tsup: ^7.2.0
-    typescript: ^5.2.2
-  languageName: unknown
-  linkType: soft
 
 "queue-microtask@npm:^1.2.2":
   version: 1.2.3

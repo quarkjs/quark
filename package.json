@@ -12,7 +12,8 @@
     "url": "git+https://github.com/quarkjs/quark.git"
   },
   "keywords": [
-    "Web Components", "TypeScript"
+    "Web Components",
+    "TypeScript"
   ],
   "author": "",
   "license": "MIT",
