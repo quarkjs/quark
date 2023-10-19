@@ -1,2 +1,3 @@
 # quark
-Uma Biblioteca para Facilitar a Criação de Web Components Nativos
+
+Uma biblioteca para facilitar a criação de Web Components nativos
