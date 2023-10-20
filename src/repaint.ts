@@ -3,7 +3,7 @@ const repaint = (target: object, propertyKey: PropertyKey, attributes: PropertyD
 
   Object.assign(attributes, {
     value (this: HTMLElement, ...args: any[]) {
-      setTimeout(() => this['trait'](), 1)
+      setTimeout(() => this['__paint__']?.(), 1)
       return Reflect.apply(method, this, args)
     }
   })
