@@ -1,4 +1,4 @@
-const connected = (target: object, propertyKey: PropertyKey) => {
+const connected = (target: any, propertyKey: PropertyKey) => {
   const method = target.connectedCallback
   Object.defineProperty(target, 'connectedCallback', {
     value () {
