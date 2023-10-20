@@ -8,10 +8,12 @@ const paint = (target: object, propertyKey: PropertyKey, attributes: PropertyDes
   })
 
   Object.assign(attributes, {
-    value (this:HTMLElement, ...args: any[]): String {
-      this.innerHTML = ''
-      this.innerHTML = Reflect.apply(method, this, args)
-      return this.innerHTML
+    value (this: HTMLElement, ...args: any[]): string {
+      const template: string = Reflect.apply(method, this, args)
+      requestAnimationFrame(() => {
+        this.innerHTML = template
+      })
+      return template
     }
   })
 }
