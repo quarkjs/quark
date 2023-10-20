@@ -1,19 +1,19 @@
-const paint = (target: object, propertyKey: PropertyKey, attributes: PropertyDescriptor) => {
-  const method = attributes.value
+import Trait from './trait'
 
-  Object.defineProperty(target, '__paint__', {
+const paint = (target: any, key: PropertyKey, attributes: PropertyDescriptor) => {
+  const overridden = attributes.value
+
+  Object.defineProperty(target, Trait.paint, {
     value () {
-      return this[propertyKey]()
+      return this[key]()
     }
   })
 
   Object.assign(attributes, {
     value (this: HTMLElement, ...args: any[]): string {
-      const template: string = Reflect.apply(method, this, args)
-      requestAnimationFrame(() => {
-        this.innerHTML = template
-      })
-      return template
+      const output: string = overridden.call(this, ...args)
+      requestAnimationFrame(() => (this.innerHTML = output))
+      return output
     }
   })
 }

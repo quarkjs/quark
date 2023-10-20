@@ -1,10 +1,12 @@
-const connected = (target: any, propertyKey: PropertyKey) => {
-  const method = target.connectedCallback
+const connected = (target: any, key: PropertyKey) => {
+  const overridden = target.connectedCallback
+
   Object.defineProperty(target, 'connectedCallback', {
     value () {
-      method?.call(this)
-      return this[propertyKey]()
-    }
+      overridden?.call(this)
+      return this[key]()
+    },
+    writable: true
   })
 }
 
