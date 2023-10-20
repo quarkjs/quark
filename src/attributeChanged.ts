@@ -2,8 +2,7 @@ import Trait from './trait'
 
 const attributeChanged = (name: string) =>
   (target: any, key: PropertyKey) => {
-    target.observedAttributes = [].concat(name, ...target.observedAttributes)
-    target[Trait.attribute] = { [name]: key, ...target[Trait.attribute] }
+    target[Trait.attribute] = { [name]: key, ...(target[Trait.attribute] ?? {}) }
 
     Object.defineProperty(target, 'attributeChangedCallback', {
       value (name: string, oldValue: string, value: string) {
